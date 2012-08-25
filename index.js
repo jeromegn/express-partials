@@ -60,7 +60,7 @@ module.exports = function(){
 
           // now render the layout
           var ext = extname(name) || '.'+(res.app.get('view engine') || 'ejs');
-          _render(basename(layout,ext)+ext, options, fn);
+          _render(layout+ext, options, fn);
         })
 
       // no layout
